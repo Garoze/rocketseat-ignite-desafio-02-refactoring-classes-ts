@@ -6,7 +6,7 @@ import { Container } from "./styles";
 
 type InputProps = {
   name: string;
-  icon: IconType;
+  icon?: IconType;
   placeholder: string;
 };
 

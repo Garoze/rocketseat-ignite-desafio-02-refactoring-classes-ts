@@ -1,22 +1,13 @@
 import { useEffect, useState } from "react";
 
 import { Header } from "../../components/Header";
-import { Food } from "../../components/Food";
-import ModalAddFood from "../../components/ModalAddFood";
+import { Food, FoodType } from "../../components/Food";
+import { ModalAddFood } from "../../components/ModalAddFood";
 import ModalEditFood from "../../components/ModalEditFood";
 
 import { api } from "../../services/api";
 
 import { FoodsContainer } from "./styles";
-
-type FoodType = {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  available: boolean;
-  image: string;
-};
 
 export const Dashboard = () => {
   const [foods, setFoods] = useState<FoodType[]>([]);
